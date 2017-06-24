@@ -77,6 +77,38 @@
           <context context-type="linenumber">20</context>
         </context-group>
       </trans-unit>
+             <trans-unit id="translatedGender" datatype="html">
+        <source>The hero is <x id="ICU"/></source>
+        <target>Heroea <x id="ICU"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="14c7055d67771a3b7b6888d282ac092896be06b6" datatype="html">
+        <source>{VAR_SELECT, select, m {male} f {female} }</source>
+        <target>{VAR_SELECT, select, m {emakumea da} f {gizona da} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="pluralGender" datatype="html">
+        <source>Here we have: <x id="ICU"/></source>
+        <target>Hemen daukagu: <x id="ICU"/></target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">32</context>
+        </context-group>
+      </trans-unit>
+       <trans-unit id="db1b921b55301ce3957e382090729562002da036" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {no one} =1 {one {VAR_SELECT, select, male {man} female {woman} }} other {<x id="INTERPOLATION"/> {VAR_SELECT_1, select, male {men} female {women} }} }</source>
+        <target>{VAR_PLURAL, plural, =0 {bat ere ez} =1 {{VAR_SELECT, select, m {emakume} f {gizon} } bat} other {<x id="INTERPOLATION"/> {VAR_SELECT_1, select, m {emakume} f {gizon} }} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>

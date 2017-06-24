@@ -4,7 +4,6 @@
 
 <h1 i18n="@@introductionHello">Hello user,</h1>
 
-
 <ul>
   <li i18n="@@needsHome">Home</li>
   <li i18n="@@needsOrchard">Orchard</li>
@@ -18,7 +17,7 @@
   <!--i18n="@@translatedComment": optional meaning|optional description -->
   Comment text
   <!--/i18n-->
-  <br />
+  <br /><br />
   <img [src]="logo" i18n-title="@@translatedImgTitle" title="Colmena logo" height="256" width="128">
 </div>
 
@@ -27,3 +26,14 @@
 <span i18n="@@pluralWolves">{wolves, plural, =0 {no wolves} =1 {one wolf} =2 {two wolves} other {a wolf pack}}</span>
 ({{wolves}})
 <br/><br />
+
+<button (click)="male()">&#9794;</button>
+<button (click)="female()">&#9792;</button>
+<span i18n="@@translatedGender">The hero is {gender, select, m {male} f {female}}</span>
+<br /><br />
+
+<span i18n="@@pluralGender">Here we have: {count, plural,
+  =0 {no one}
+  =1 {one {gender, select, male {man} female {woman}}}
+  other {{{heroes.length}} {gender, select, male {men} female {women}}}
+}</span>
