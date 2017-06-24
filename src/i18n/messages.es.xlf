@@ -42,6 +42,25 @@
           <context context-type="linenumber">9</context>
         </context-group>
       </trans-unit>
+      <trans-unit id="translatedText" datatype="html">
+        <source>My amazing text!</source>
+        <target>Mi apasionante texto!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="translatedComment&quot;: optional meaning|optional description" datatype="html">
+        <source>
+  Comment text
+  </source>
+        <target>Texto del comentario</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+        <note priority="1" from="meaning">=&quot;</note>
+      </trans-unit>
     </body>
   </file>
 </xliff>
