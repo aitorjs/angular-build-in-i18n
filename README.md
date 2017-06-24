@@ -16,6 +16,8 @@ Working with AOT. Creates one app per language.
 
 Posibilidad 1: 
 -  Servir la aplicación en castellano: ng serve --aot --i18n-file=src/i18n/messages.es.xlf --locale=es --i18n-format=xlf
+(Eventualmente, *npm run serve-en*, *npm run serve-es*, npm run serve-eu
+atajos para servir la app en ingles, castellano o euskara )
 - Abrir http://localhost:4200
 
 Posibilidad 2:
