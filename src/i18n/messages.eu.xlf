@@ -4,7 +4,7 @@
     <body>
       <trans-unit id="801ebd128d066af165032908048bf85435e62e0a" datatype="html">
         <source>Hello world!</source>
-        <target>Hello world!</target>
+        <target>Kaixo mundua!</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">2</context>
@@ -12,7 +12,7 @@
       </trans-unit>
       <trans-unit id="introductionHello" datatype="html">
         <source>Hello user,</source>
-        <target>Hello user,</target>
+        <target>Kaixo erabiltzaile,</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">5</context>
@@ -20,7 +20,7 @@
       </trans-unit>
       <trans-unit id="needsHome" datatype="html">
         <source>Home</source>
-        <target>Home</target>
+        <target>Etxea</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">7</context>
@@ -28,7 +28,7 @@
       </trans-unit>
       <trans-unit id="needsOrchard" datatype="html">
         <source>Orchard</source>
-        <target>Orchard</target>
+        <target>Baratza</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">8</context>
@@ -36,7 +36,7 @@
       </trans-unit>
       <trans-unit id="hasPerson" datatype="html">
         <source>Person</source>
-        <target>Person</target>
+        <target>Pertsona</target>
         <context-group purpose="location">
           <context context-type="sourcefile">app/app.component.ts</context>
           <context context-type="linenumber">9</context>

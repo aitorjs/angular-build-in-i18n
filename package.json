@@ -9,7 +9,13 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build-i18n": "for lang in en es fr; do ng build --output-path=dist/$lang --aot -prod --bh /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done"
+
+    "get-i18n": "ng xi18n --output-path src/i18n",
+    "build-i18n": "for lang in en es eu; do ng build --output-path=dist/$lang --aot -prod --bh /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done",
+    "serve-en": "ng serve --aot --i18n-file=src/i18n/messages.en.xlf --locale=en --i18n-format=xlf",
+    "serve-es": "ng serve --aot --i18n-file=src/i18n/messages.es.xlf --locale=es --i18n-format=xlf",
+    "serve-eu": "ng serve --aot --i18n-file=src/i18n/messages.eu.xlf --locale=eu --i18n-format=xlf",
+    "i18n-apache": "cp dist/* /var/www/html -R"
   },
   "private": true,
   "dependencies": {

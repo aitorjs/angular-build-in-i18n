@@ -5,9 +5,9 @@ Working with AOT. Creates one app per language.
 
 - *ng build --aot*
 - Anadir un string como traducible: <h1 i18n>Hello world!</h1>
-- Crear la pantilla general con todas las traduciones: ng xi18n --output-path src/i18n
-- cp src/i18n/messages.xlf src/i18n/messages.es.xlf, suponiendo que estamos traduciendo a castellano.
-- Añadir la traduccion a messages.es.xlf
+- Crear la pantilla general con todas las traduciones: *ng xi18n --output-path src/i18n* o *npm run get-i18n*
+- *cp src/i18n/messages.xlf src/i18n/messages.es.xlf*, suponiendo que queremos traducir la app a castellano.
+- Modificar la traducción en messages.es.xlf (la linea que tiene la etiqueta <target>)
 
       <trans-unit id="[...]" datatype="html">
         <source>Hello World!</source>
@@ -15,7 +15,7 @@ Working with AOT. Creates one app per language.
       </trans-unit>
 
 Posibilidad 1: 
--  Servir la aplicacion en castellano: ng serve --aot --i18n-file=src/i18n/messages.es.xlf --locale=es --i18n-format=xlf
+-  Servir la aplicación en castellano: ng serve --aot --i18n-file=src/i18n/messages.es.xlf --locale=es --i18n-format=xlf
 - Abrir http://localhost:4200
 
 Posibilidad 2:
@@ -23,6 +23,7 @@ Posibilidad 2:
 ```
 "build-i18n": "for lang in en es fr; do ng build --output-path=dist/$lang --aot -prod --bh /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done"
 ```
+- *npm run build-i18n*
 - Copiar el contenido de dist, en el localhost de apache.
 - Abrir en un navegador http://localhost/es, http://localhost/en, http://localhost/fr
 
