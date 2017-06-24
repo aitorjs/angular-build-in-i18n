@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  logo = 'https://raw.githubusercontent.com/colmena/colmena/develop/apps/admin/src/assets/logo.png';
 }

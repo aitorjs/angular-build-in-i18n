@@ -61,6 +61,14 @@
         </context-group>
         <note priority="1" from="meaning">=&quot;</note>
       </trans-unit>
+      <trans-unit id="translatedImgTitle" datatype="html">
+        <source>Colmena logo</source>
+        <target>Colmena-ren logoa</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">20</context>
+        </context-group>
+      </trans-unit>
     </body>
   </file>
 </xliff>
