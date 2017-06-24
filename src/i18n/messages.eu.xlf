@@ -18,6 +18,14 @@
           <context context-type="linenumber">5</context>
         </context-group>
       </trans-unit>
+            <trans-unit id="pluralWolves" datatype="html">
+        <source>{VAR_PLURAL, plural, =0 {no wolves} =1 {one wolf} =2 {two wolves} other {a wolf pack} }</source>
+        <target>{VAR_PLURAL, plural, =0 {otsorik ez} =1 {otso bat} =2 {bi otso} other {otso ugari} }</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
       <trans-unit id="needsHome" datatype="html">
         <source>Home</source>
         <target>Etxea</target>

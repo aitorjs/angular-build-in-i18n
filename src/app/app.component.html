@@ -3,6 +3,8 @@
 </div>
 
 <h1 i18n="@@introductionHello">Hello user,</h1>
+
+
 <ul>
   <li i18n="@@needsHome">Home</li>
   <li i18n="@@needsOrchard">Orchard</li>
@@ -19,3 +21,9 @@
   <br />
   <img [src]="logo" i18n-title="@@translatedImgTitle" title="Colmena logo" height="256" width="128">
 </div>
+
+<button (click)="inc(-1)">-</button>
+<button (click)="inc(1)">+</button>
+<span i18n="@@pluralWolves">{wolves, plural, =0 {no wolves} =1 {one wolf} =2 {two wolves} other {a wolf pack}}</span>
+({{wolves}})
+<br/><br />
