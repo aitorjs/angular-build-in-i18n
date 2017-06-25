@@ -35,6 +35,8 @@ https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f1
   For now, we are using Virtaal (http://virtaal.translatehouse.org/) that is multiplatform
   so whats on GNU/Linux (use apt), Windows and MacOs
 
+  Using *File-> Update template* can update language translation with last updates from base template keeping the translated strings.
+
 # I18n
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
