@@ -31,6 +31,10 @@ Posibilidad 2:
 
 https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f17e358
 
+# Software for translation
+  For now, we are using Virtaal (http://virtaal.translatehouse.org/) that is multiplatform
+  so whats on GNU/Linux (use apt), Windows and MacOs
+
 # I18n
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.3.
