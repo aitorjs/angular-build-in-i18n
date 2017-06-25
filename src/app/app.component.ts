@@ -11,6 +11,7 @@ export class AppComponent {
   gender = 'f';
   count = 2;
   heroes: string[] = ['Magneta', 'Celeritas', 'Dynama'];
+  langs: string[] = ['en', 'es', 'eu'];
 
   inc(i: number) {
     this.wolves = Math.min(5, Math.max(0, this.wolves + i));
@@ -21,4 +22,5 @@ export class AppComponent {
   female() {
     this.gender = 'f';
   }
+
 }

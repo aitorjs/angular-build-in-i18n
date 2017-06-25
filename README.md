@@ -1,4 +1,4 @@
-Transladable string, translated to Spanish, English (base) and French.
+Transladable string, translated to Spanish, English (base) and Basque.
 Working with AOT. Creates one app per language.
 
 # Steeps
@@ -11,7 +11,7 @@ Working with AOT. Creates one app per language.
 
       <trans-unit id="[...]" datatype="html">
         <source>Hello World!</source>
-        <target>¿hola, qué tal?</target>
+        <target>Hola mundo!</target>
       </trans-unit>
 
 Posibilidad 1: 
@@ -25,8 +25,8 @@ Posibilidad 2:
 ```
 "build-i18n": "for lang in en es fr; do ng build --output-path=dist/$lang --aot -prod --bh /$lang/ --i18n-file=src/i18n/messages.$lang.xlf --i18n-format=xlf --locale=$lang; done"
 ```
-- *npm run build-i18n*
-- Copiar el contenido de dist, en el localhost de apache.
+- Buildear todos los idiomas: *npm run build-i18n*
+- Copiar el contenido de dist, en el localhost de apache (*npm run i18n-apache*).
 - Abrir en un navegador http://localhost/es, http://localhost/en, http://localhost/fr
 
 https://medium.com/@feloy/deploying-an-i18n-angular-app-with-angular-cli-fc788f17e358

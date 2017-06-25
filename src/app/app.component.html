@@ -4,6 +4,13 @@
 
 <h1 i18n="@@introductionHello">Hello user,</h1>
 
+<div id="lang">
+  <ul>
+    <li *ngFor="let lang of langs">
+      <a href="/{{lang}}">{{lang}}</a>
+    </li>
+  </ul>
+</div>
 <ul>
   <li i18n="@@needsHome">Home</li>
   <li i18n="@@needsOrchard">Orchard</li>
